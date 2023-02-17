@@ -61,7 +61,7 @@ const MemberRegi = () => {
   const Submit = async () => {
     const { fname, lname, enrollment_number, email, contact, gender, college, branch, year, semester, section, language, tdate, time, tid, check } = user
     try {
-      const res = await fetch("http://localhost:5000/Member", {
+      const res = await fetch("/Member", {
         /* post data */
         method: "POST",
         headers: {
@@ -92,7 +92,7 @@ const MemberRegi = () => {
   const show = async () => {
     /* for check form is open or closed */
     try{
-      const res = await fetch("http://localhost:5000/toggle", {
+      const res = await fetch("/toggle", {
         method: "GET",
         headers: {
           Accept: "application/json",
