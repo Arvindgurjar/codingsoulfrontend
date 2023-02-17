@@ -10,6 +10,7 @@
     "date-fns": "^2.29.2",
     "framer-motion": "^7.2.1",
     "http-proxy-middleware": "^2.0.6",
+    "ra-data-simple-rest": "^4.8.0",
     "react": "^18.2.0",
     "react-big-calendar": "^1.5.0",
     "react-datepicker": "^4.8.0",
