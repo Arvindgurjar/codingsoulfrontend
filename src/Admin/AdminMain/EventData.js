@@ -10,7 +10,7 @@ const EventData = () => {
     const [EData, setEData] = useState([])
     const EventData = async () => {
         /* for get data */
-        const res = await fetch("https://codingsoulbackend.onrender.com/EventData", {
+        const res = await fetch("/EventData", {
             method: "GET",
             headers: {
                 Accept: "application/json",

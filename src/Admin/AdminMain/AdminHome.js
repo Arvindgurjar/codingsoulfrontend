@@ -18,7 +18,7 @@ const AdminHome = () => {
   const Navigate = useNavigate();
   /* for authentification of admin home page */
   const check = async () => {
-    const res = await fetch("https://codingsoulbackend.onrender.com/AdminHome", {
+    const res = await fetch("/AdminHome", {
       method: "GET",
       headers: {
         Accept: "appliction/json",
@@ -35,7 +35,7 @@ const AdminHome = () => {
   }
   /* for get for form are opened or closed */
   const data = async () => {
-    const res = await fetch("https://codingsoulbackend.onrender.com/toggle", {
+    const res = await fetch("/toggle", {
       method: "GET",
       headers: {
         Accept: "application/json",
@@ -48,7 +48,7 @@ const AdminHome = () => {
   }
   /* for open closed Event forms */
   const Event = async () => {
-    await fetch("https://codingsoulbackend.onrender.com/toggle", {
+    await fetch("/toggle", {
       method: "PATCH",
       headers: {
         Accept: "application/json",
@@ -63,7 +63,7 @@ const AdminHome = () => {
   }
   /* for open closed Member forms */
   const Member = async () => {
-    await fetch("https://codingsoulbackend.onrender.com/toggle", {
+    await fetch("/toggle", {
       method: "PATCH",
       headers: {
         Accept: "application/json",
@@ -86,7 +86,7 @@ const AdminHome = () => {
   /* for Event Searching Data */
   const EventSearch = async () => {
     const { select, Edata } = sData
-    const res = await fetch("https://codingsoulbackend.onrender.com/EventSearch", {
+    const res = await fetch("/EventSearch", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -110,7 +110,7 @@ const AdminHome = () => {
   /* for Member Searching Data */
   const MEventSearch = async () => {
     const { Mselect, Mdata } = MsData
-    const res = await fetch("https://codingsoulbackend.onrender.com/MemberSearch", {
+    const res = await fetch("/MemberSearch", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -159,7 +159,7 @@ const AdminHome = () => {
   const SendEMessage = async () => {
     const { subject, message } = EMdata
     try {
-      const res = await fetch("https://codingsoulbackend.onrender.com/Eventmail", {
+      const res = await fetch("/Eventmail", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -184,7 +184,7 @@ const AdminHome = () => {
   const SendMMessage = async () => {
     const { subject, message } = MMdata
     try {
-      const res = await fetch("https://codingsoulbackend.onrender.com/Membermail", {
+      const res = await fetch("/Membermail", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
