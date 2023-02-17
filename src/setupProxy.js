@@ -1,11 +1,11 @@
-import {createProxyMiddleware} from "http-proxy-middleware"
+const { createProxyMiddleware } = require('http-proxy-middleware');
 
-export default function(app){
-    app.use(
-        '/*',
-        createProxyMiddleware({
-            target:"https://codingsoulbackend.onrender.com",
-            changeOrigin: true,
-        })
-    );
+module.exports = function(app) {
+  app.use(
+    '/*',
+    createProxyMiddleware({
+      target: 'https://codingsoulbackend.onrender.com',
+      changeOrigin: true,
+    })
+  );
 };
