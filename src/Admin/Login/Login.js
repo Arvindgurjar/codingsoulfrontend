@@ -52,7 +52,7 @@ const Login = () => {
     const { email, password } = user
     /* for Login successful or not */
     try {
-      const res = await fetch("/Login", {
+      const res = await fetch("https://codingsoulbackend.onrender.com/Login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

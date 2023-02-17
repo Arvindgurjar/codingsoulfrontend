@@ -61,7 +61,7 @@ const MemberRegi = () => {
   const Submit = async () => {
     const { fname, lname, enrollment_number, email, contact, gender, college, branch, year, semester, section, language, tdate, time, tid, check } = user
     try {
-      const res = await fetch("/Member", {
+      const res = await fetch("https://codingsoulbackend.onrender.com/Member", {
         /* post data */
         method: "POST",
         headers: {
@@ -92,7 +92,7 @@ const MemberRegi = () => {
   const show = async () => {
     /* for check form is open or closed */
     try{
-      const res = await fetch("/toggle", {
+      const res = await fetch("https://codingsoulbackend.onrender.com/toggle", {
         method: "GET",
         headers: {
           Accept: "application/json",

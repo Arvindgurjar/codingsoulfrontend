@@ -7,7 +7,7 @@ const Logout = () => {
     const Navigate = useNavigate();
     const check = async () => {
         /* for logout successful or not */
-        const res = await fetch("/Logout", {
+        const res = await fetch("https://codingsoulbackend.onrender.com/Logout", {
             method: "GET",
             headers: {
                 Accept: "application/json",

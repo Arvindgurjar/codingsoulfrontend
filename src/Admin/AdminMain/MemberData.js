@@ -11,7 +11,7 @@ const MemberData = () => {
     const [MData, setMData] = useState([]);
     const MemberData = async () => {
         /* for get data */
-        const res = await fetch("/MemberData", {
+        const res = await fetch("https://codingsoulbackend.onrender.com/MemberData", {
             method: "GET",
             headers: {
                 Accept: "application/json",
