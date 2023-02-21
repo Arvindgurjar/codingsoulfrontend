@@ -111,7 +111,7 @@ const MemberRegi = () => {
   }
   useEffect(() => {
     show();
-  }, [data1])
+  }, [])
   if(load){
     return <Loading/>
   }

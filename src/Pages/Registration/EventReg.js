@@ -110,7 +110,7 @@ const EventRegi = () => {
   }
   useEffect(() => {
     show();
-  }, [data1])
+  }, [])
   if (load) {
     return <Loading />
   }
