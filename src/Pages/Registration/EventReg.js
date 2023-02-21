@@ -63,7 +63,7 @@ const EventRegi = () => {
     /* for post data */
     const { fname, lname, enrollment_number, email, contact, gender, college, branch, year, semester, section, language, hacker, tdate, time, tid, check } = user
     try {
-      const res = await fetch("https://codingsoulbackend.onrender.com/Event", {
+      const res = await fetch("/Event", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -93,7 +93,7 @@ const EventRegi = () => {
   const show = async () => {
     /* for checking of form is open or closed by admin */
     try {
-      const res = await fetch("https://codingsoulbackend.onrender.com/toggle", {
+      const res = await fetch("/toggle", {
         method: "GET",
         headers: {
           Accept: "application/json",
